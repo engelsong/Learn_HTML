@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>H5 Practice</title>
+    <style type="text/css">
+           #div1 { width:198px; height:66px; padding:10px; border:1px solid #aaaaaa;}
+    </style>
+    <script>
+        function allow_drop(ev){
+            ev.preventDefault();
+        }
+
+        function drag(ev) {
+            ev.dataTransfer.setData("text", ev.target.id);
+        }
+
+        function drop(ev) {
+            ev.preventDefault();
+            var data = ev.dataTransfer.getData("text");
+            ev.target.appendChild(document.getElementById(data));
+        }
+    </script>
+</head>
+
+<body>
+
+  <h2>canvas</h2>
+  <canvas id="myCanvas" width="200" height="100"></canvas>
+  <script type="text/javascript">
+    var c=document.getElementById("myCanvas");
+    var cxt=c.getContext("2d");
+    cxt.fillStyle="#FF0000";
+    cxt.fillRect(0,0,150,75);
+  </script>
+  <h2>SVG</h2>
+  <svg xmlns="http://www.w3.org/2000/svg" version="1.1" height="190">
+    <polygon points="100,1 40,180 190,60 10,60 160,180"
+             style="fill:lime;stroke:purple;stroke-width:5;fill-rule:evenodd;" />
+  </svg>
+  <h2>Audio tag</h2>
+    <audio controls="controls">
+        <source src="好运来.mp3" type="audio/mp3" />
+    </audio>
+  <h2>embed</h2>
+      <embed height="100" width="1000" src="好运来.mp3" />
+  <h2>Yahoo player</h2>
+    <a href="好运来.mp3">Play sound</a>
+      <script type="text/javascript" src="http://mediaplayer.yahoo.com/js"></script>
+
+  <h2>drag and drop</h2>
+  <div id="div1" ondrop="drop(event)" ondragover="allow_drop(event)"></div>
+  <img id="drag1" src="eg_dragdrop_w3school.gif" draggable="true" ondragstart="drag(event)" width="178" height="46">
+
+  <h2>video tag</h2>
+  <video width="720" height="576" controls="controls">
+      <source src="%5B新闻直播间%5D中国向墨西哥提供多轮人道援助.mp4" type="video/mp4"
+  </video>
+
+
+</body>
+</html>

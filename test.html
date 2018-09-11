@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="chs">
+  <meta charset="UTF-8">
+    <title>我的练习</title>
+    <style>
+        .cities{
+            background-color: darkslategrey;
+            color: white;
+            margin:20px;
+            padding:20px;
+        }
+        span.red{color:red;
+            }
+        #header {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 5px;
+        }
+        #nav{
+            line-height: 30px;
+            background-color: #eeeeee;
+            height: 300px;
+            width:100px;
+            float:left;
+            padding:5px;
+        }
+        #footer{
+            background-color: black;
+            color: white;
+            clear: both;
+            text-align: center;
+            padding: 5px;
+        }
+        #section{
+            width:350px;
+            float:left;
+            padding:10px;
+        }
+
+    </style>
+
+
+
+<body>
+    <div id="header">
+        <h2>HTML Input属性</h2>
+    </div>
+
+    <div id="section">
+        <form action="">
+            First name: <br/>
+            <input type="text" name="firstname" value="Song" disabled><br/>
+            Last name:<br/>
+            <input type="text" name="lastname" value="Jiu" readonly><br/>
+            Address:<br/>
+            <input type="text" name="address" maxlength="10"><br/>
+        </form>
+    </div>
+    <div id="footer">。。。</div>
+    <div id="header">
+        <h1>html布局练习</h1>
+    </div>
+    <div id="nav">
+        紧急项目<br/>
+        一般物资<br/>
+        小额赠送<br/>
+    </div>
+    <div id="section">
+        <h2>紧急援助项目</h2>
+        <p>短名单轮流，<br/>五家企业分别执行</p>
+        <p>预计今年年底或者明年年初将进行重新招标</p>
+        <script type="text/javascript">document.write("<h1>Hello world!</h1>")</script>
+    </div>
+    <div id="footer">
+        Copyright Song
+    </div>
+    <div class="cities">
+        <h2>表单练习</h2>
+        <form action="" method="get">
+            <fieldset>
+                <legend>个人信息：</legend>
+                First name:<br/>
+                <input type="text" name="firstname">
+                <br/>
+                Password:<br/>
+                <input type="password" name="psw"><br/>
+                <input type="radio" name="sex" value="male" checked>Male
+                <br/>
+                <input type="radio" name="sex" value="female">Female
+                <br/>
+                Quantity (between 1 and 5):
+                <input type="number" name="quantity" min="1" max="5">
+                <br/>
+                Points:
+                <input type="number" name="points" min="0" max="100" step="5" value="30">
+                <br/>
+                date:
+                <input type="date" name="birthday">
+                <br/>
+                month:
+                <input type="month" name="mymonth">
+                <br/>
+                week:
+                <input type="week" name="myweek">
+                <br/>
+                time_without_timezone:
+                <input type="time" name="usr_time">
+                <br/>
+                datetime:
+                <input type="datetime" name="usr_datetime">
+                <br/>
+                datetime_local:
+                <input type="datetime-local" name="usr_localtime">
+                <br/>
+                email:
+                <input type="email" name="myemail">
+                <br/>
+                search:
+                <input type="search" name="mysearch">
+                <br/>
+                tel:
+                <input type="tel" name="usrtel">
+                <br/>
+                url:
+                <input type="url" name="myurl">
+                <br/>
+                Select one color:
+                <input type="color" name="mycolor">
+                <br/>
+                range:
+                <input type="range" name="myrange" min="0" max="10">
+                <br/>
+                <fieldset>
+                    <legend>Car brand:</legend>
+                    <input type="checkbox" name="car" value="Audi">I have a Audi!
+                    <br/>
+                    <input type="checkbox" name="car" value="Benz">I have a Benz!
+                </fieldset>
+                <br/>
+                <br/>
+                <input type="button" onclick="alert('Hello world')" value="hit me">
+                <br/>
+                <br/>
+                <input type="submit" value="Submit">
+            </fieldset>
+        </form>
+    </div>
+    <div class="cities">
+        <h1>类练习</h1>
+        <p>MacBook Pro 配备Touch Bar（13英寸，四个USB-C）<br/>
+            -定位：<span class="red">高性能超极本</span>。与无Bar机型轻薄度一致并加强性能和散热规格。<br/>
+        -28W低压处理器（实际稳定运行于30W-35W，短时可支持50W），Iris核显+eDRAM<br/>
+        -提供上一代标压级CPU性能，可以用于中重度任务<br/>
+        </p>
+
+    </div>
+    <div class="cities">
+        <h1>列表练习</h1>
+        <h2>无序列表</h2>
+        <ul>
+            <li>一般援助</li>
+            <li>紧急援助</li>
+        </ul>
+        <h2>有序列表</h2>
+        <ol>
+            <li>乌拉圭</li>
+            <li>巴新</li>
+            <li>墨西哥</li>
+        </ol>
+        <h2>定义列表</h2>
+        <dl>
+            <dt>python</dt>
+            <dd>后端语言</dd>
+            <dt>HTML</dt>
+            <dd>前端语言</dd>
+        </dl>
+    </div>
+
+
+    <iframe src="test.html" width="1200" height="200" frameborder="0" name="iframe">123123</iframe>
+    <p><a href="https://www.zhihu.com" target="iframe">知乎啊</a></p>
+    <h1 align="center">标题1</h1>
+    <p style="background-color: blueviolet;font-family: 'Microsoft YaHei UI';font-size: 28px;color:whitesmoke">
+        我们的目标是：<q>没有蛀牙！</q>
+        <br/>
+        以下文字引用于：
+        <a href="#tips">tips</a>
+        <address>Room325<br/>No.6 St. Fuchengmenwai Xicheng district<br/>Beijing, P.R.China</address>
+    </p>
+
+    <blockquote cite="https://www.zhihu.com/question/286082131/answer/447775768">
+        一般身材里提到的明星，沈月等等。我既不是黑粉，也不是粉丝。<br/>
+        我只是客观称述事实，众所周知，    沈月的身材的确是一个大bug，<br/>
+        我也并没有说沈月演技差，或者还是长的丑，黑沈月，绝无此意。希望大家身材能越来越好。<br/>
+        以上。
+    </blockquote>
+    <h2 style="background-color: beige">标题2</h2>
+    <p>
+        <dfn title="World Trade Organization">WTO</dfn>也是w开头的组织。<br/>
+        <abbr title="World Trade Organization">WTO</abbr>也是w开头的组织。<br/>
+        <dfn><abbr title="World Trade Organization">WTO</abbr></dfn>也是w开头的组织。<br/>
+        <code>
+            <pre>
+            var person = {
+                firstName:"Bill",
+            lastName:"Gates",
+            age:50,
+            eyeColor:"blue"
+        }
+            </pre>
+        </code>
+        <table border="1">
+        <caption>表格标题</caption>
+        <th>表头1</th>
+        <th>表头2</th>
+        <th>表头3</th>
+            <tr>
+                <td>100</td>
+                <td>&nbsp;</td>
+                <td>300</td>
+            </tr>
+            <tr>
+                <td>100</td>
+                <td>200</td>
+                <td>300</td>
+            </tr>
+        </table>
+
+    </p>
+    <h3>标题3</h3>
+    <P style="background-color: aqua;text-align: center;">我的第1个段落。<br/>
+        <cite>Harry Potter</cite> by J.K. Rowalling<br/>
+        <bdo dir="rtl">这段文字从右向左</bdo>
+    </P>
+    <br/>
+    <P style="font-family: 'Microsoft YaHei UI';color: red; font-size:36px">我的第2个段落。</P>
+    <hr/>
+    <a href="http://www.baidu.com">百度</a>
+    <br/>
+    <a href="https://www.zhihu.com"target="_blank">
+    <img alt="您无法显示此图像" border="0" src="123.jpg" width="480" height="270" ismap /></a>
+    <br/>
+
+
+    <a name="tips">从这里开始往后就是P.S.</a>
+
+</body>
+</html>
+
