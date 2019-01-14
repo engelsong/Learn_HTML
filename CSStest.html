@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>CSS test</title>
     <style type="text/css">
-        div {width: 300px;
+        #text div {width: 300px;
             background-color: none;
             font-family: sans-serif;
         }
@@ -23,14 +23,61 @@
             font-family: Arial;
             font-weight: normal;
             font-size: 20px;
+            border-style: outset;
         }
+        p.c {
+            padding: 10%;
+            border-style: solid dotted dashed double;
+            border-width: 5px;
+            border-color: burlywood rgb(127,127,127) #aaaaaa darkgoldenrod;
+        }
+        table {
+            border-collapse: collapse;
+            width: 50em;
+        }
+        table th, td {
+            border: 1px solid blue;
+        }
+        th {
+            height: 50px;
+            background-color: coral;
+            color: white;
+        }
+        td {
+            text-align: center;
+            vertical-align: bottom;
+            height: 40px;
+            padding: 10px;
+        }
+
     </style>
 </head>
 <body>
-    <div>
+    <div style="width: 200px;">
+        <p class="c">This paragragh is contained within a DIV that has a width of 200 pixels.</p>
+    </div>
+    <div id="text">
         <p class="a">This is a paragraph!!!</p>
         <br />
         <p class="b">This is the second paragraph!! And I have to give this paragraph more letters to extend!</p>
     </div>
+
+    <table border="1">
+        <caption>表格标题</caption>
+        <th>表头1</th>
+        <th>表头2</th>
+        <th>表头3</th>
+            <tr>
+                <td>100</td>
+                <td>&nbsp;</td>
+                <td>300</td>
+            </tr>
+            <tr>
+                <td>100</td>
+                <td>200</td>
+                <td>300</td>
+            </tr>
+    </table>
+
 </body>
 </html>
