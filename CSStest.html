@@ -27,9 +27,11 @@
         }
         p.c {
             padding: 10%;
-            border-style: solid dotted dashed double;
+            border-style: solid;
             border-width: 5px;
             border-color: burlywood rgb(127,127,127) #aaaaaa darkgoldenrod;
+            margin: 10px;
+
         }
         table {
             border-collapse: collapse;
@@ -49,10 +51,30 @@
             height: 40px;
             padding: 10px;
         }
+        span {
+            float:left;
+            width:5px;
+            font-size: 400%;
+            font-family: "Microsoft YaHei UI";
+            line-height: 80%;
+         }
 
+        p.ft {
+            float: left;
+        }
     </style>
 </head>
 <body>
+    <div>
+        <span>T</span>
+        <p class="ft">
+            his is some text.
+            This is some text.This is some text.This is some text.This is some text.
+            This is some text.This is some text.This is some text.This is some text.
+            This is some text.This is some text.This is some text.This is some text.
+            This is some text.This is some text.This is some text.This is some text.
+        </p>
+    </div>
     <div style="width: 200px;">
         <p class="c">This paragragh is contained within a DIV that has a width of 200 pixels.</p>
     </div>
